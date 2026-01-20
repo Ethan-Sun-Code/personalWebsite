@@ -16,11 +16,15 @@ services:
 
   backend:
     build: ./backend
-    command: python manage.py runserver 0.0.0.0:8000
+    # In production, use gunicorn (default in Dockerfile) instead of runserver
+    command: gunicorn --bind 0.0.0.0:8000 backend.wsgi:application
     volumes:
       - ./backend:/app
-    ports:
-      - "8000:8000"
+      - static_volume:/app/staticfiles
+    expose:
+      - "8000"
+    # ports:
+    #   - "8000:8000" # Don't expose backend directly in prod, go through Nginx
     depends_on:
       - db
     environment:
@@ -29,23 +33,21 @@ services:
       - DATABASE_PASSWORD=password
       - DATABASE_HOST=db
       - DATABASE_PORT=3306
+      - DEBUG=False
+      - ALLOWED_HOSTS=sunguowen.cn,www.sunguowen.cn,localhost,127.0.0.1
 
   frontend:
     build: 
       context: ./frontend
       dockerfile: Dockerfile
-      target: build-stage # Use build stage for development if needed, but for dev usually we use volume mapping or separate node server.
-    # For development, we usually override the command to run dev server
-    # However, since the user asked for docker management, maybe they want the prod build or dev env.
-    # Let's set it up for development first.
-    command: npm run dev -- --host
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
+      target: production-stage
     ports:
-      - "5173:5173"
+      - "80:80"
     depends_on:
       - backend
+    volumes:
+      - static_volume:/app/staticfiles
 
 volumes:
   db_data:
+  static_volume:

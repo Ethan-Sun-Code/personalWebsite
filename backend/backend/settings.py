@@ -26,7 +26,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-change-me-in-producti
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['imxiaosun.com', 'www.imxiaosun.com', 'localhost', '127.0.0.1']
+
+CSRF_TRUSTED_ORIGINS = ['https://imxiaosun.com', 'https://www.imxiaosun.com', 'http://imxiaosun.com', 'http://www.imxiaosun.com']
 
 
 # Application definition
@@ -138,6 +140,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "http://localhost:80",
+    "http://sunguowen.cn",
+    "https://sunguowen.cn",
+    "http://www.sunguowen.cn",
+    "https://www.sunguowen.cn",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
