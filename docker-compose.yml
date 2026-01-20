@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: personal_website
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  backend:
+    build: ./backend
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_NAME=personal_website
+      - DATABASE_USER=user
+      - DATABASE_PASSWORD=password
+      - DATABASE_HOST=db
+      - DATABASE_PORT=3306
+
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: build-stage # Use build stage for development if needed, but for dev usually we use volume mapping or separate node server.
+    # For development, we usually override the command to run dev server
+    # However, since the user asked for docker management, maybe they want the prod build or dev env.
+    # Let's set it up for development first.
+    command: npm run dev -- --host
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  db_data:
