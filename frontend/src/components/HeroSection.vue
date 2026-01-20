@@ -6,10 +6,10 @@ import { Mail, Github, FileText } from 'lucide-vue-next'
   <section class="section hero">
     <div class="container hero-content">
       <div class="hero-text">
-        <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
-        <h2 class="subtitle">PhD Candidate / Researcher</h2>
+        <h1>Hello, I'm <span class="highlight">孙国文</span></h1>
+        <h2 class="subtitle">PhD / Research Associate</h2>
         <p class="intro">
-          专注于人工智能与数据科学领域的研究。致力于通过技术解决现实世界的问题。
+          专注于复合材料多尺度表征与性能预测的研究。致力于通过技术解决现实世界的问题。
           这里展示了我的学术经历、项目成果以及个人思考。
         </p>
         <div class="social-links">
@@ -19,7 +19,7 @@ import { Mail, Github, FileText } from 'lucide-vue-next'
           <a href="https://github.com" target="_blank" class="btn btn-outline">
             <Github size="18" /> GitHub
           </a>
-          <a href="mailto:email@example.com" class="btn btn-outline">
+          <a href="mailto:govensun53@gmail.com" class="btn btn-outline">
             <Mail size="18" /> 联系我
           </a>
         </div>
