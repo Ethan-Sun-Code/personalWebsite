@@ -1,7 +1,7 @@
 <script setup>
 const experiences = [
   {
-    period: '2020。10 - 2025。03',
+    period: '2020.10 - 2025.03',
     role: '博士研究生 (PhD Student)',
     org: '谢菲尔德大学机械工程学院',
     desc: '研究方向：复合材料多尺度表征和性能预测。发表期刊论文 1 篇，会议论文 2 篇。'
