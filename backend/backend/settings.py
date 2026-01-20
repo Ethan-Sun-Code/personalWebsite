@@ -26,9 +26,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-change-me-in-producti
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['imxiaosun.com', 'www.imxiaosun.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'sunguowen.cn,www.sunguowen.cn').split(',')
 
-CSRF_TRUSTED_ORIGINS = ['https://imxiaosun.com', 'https://www.imxiaosun.com', 'http://imxiaosun.com', 'http://www.imxiaosun.com']
+CSRF_TRUSTED_ORIGINS = ['https://sunguowen.cn', 'https://www.sunguowen.cn', 'http://sunguowen.cn', 'http://www.sunguowen.cn']
 
 
 # Application definition
