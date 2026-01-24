@@ -1,9 +1,9 @@
 <script setup>
 const skills = [
-  { category: '编程语言', items: ['Python', 'JavaScript', 'C++', 'SQL'] },
-  { category: 'Web 开发', items: ['Vue.js', 'Django', 'Docker', 'REST API'] },
-  { category: '数据科学', items: ['PyTorch', 'Pandas', 'Scikit-learn', 'Matplotlib'] },
-  { category: '工具 & 平台', items: ['Git', 'Linux', 'AWS', 'LaTeX'] }
+  { category: '计算建模 & 仿真', items: ['ABAQUS (UMAT/VUMAT)', 'Finite Element Analysis', 'Process-Structure-Performance', 'Multiscale Modelling'] },
+  { category: '实验表征 & 测试', items: ['X-ray CT (XCT)', 'SEM', 'Digital Volume Correlation (DVC)', 'In-situ Mechanical Testing'] },
+  { category: '编程 & 开发', items: ['Python', 'PyQt', 'C++', 'MATLAB', 'Image-based Modelling'] },
+  { category: '通用能力', items: ['Project Coordination', 'Data Management', 'Technical Communication', 'Mentoring'] }
 ]
 </script>
 

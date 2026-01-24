@@ -2,27 +2,39 @@
 const experiences = [
   {
     period: '2020.10 - 2025.03',
-    role: '博士研究生 (PhD Student)',
-    org: '谢菲尔德大学机械工程学院',
-    desc: '研究方向：复合材料多尺度表征和性能预测。发表期刊论文 1 篇，会议论文 2 篇。'
+    role: '机械工程博士 (PhD)',
+    org: '谢菲尔德大学 (University of Sheffield)',
+    desc: '研究课题：TFP复合材料力学性能与损伤行为的多尺度表征与建模框架。导师：Dr Christophe Pinna 等。核心贡献：利用SEM和XCT研究TFP失效机制；开发多尺度模型预测强度；开发Python/C++ DVC算法验证模型。'
+  },
+  {
+    period: '2021 - 2025',
+    role: '助教 (Teaching Assistant)',
+    org: '谢菲尔德大学 (University of Sheffield)',
+    desc: '负责有限元分析工业应用、材料完整性、肌肉骨骼系统计算生物力学等课程的辅导与实验指导。多次获得学生好评。'
+  },
+  {
+    period: '2020 - 2025',
+    role: 'XCT 实验室管理员 & 培训师',
+    org: '谢菲尔德大学 (University of Sheffield)',
+    desc: '负责XCT实验室的日常运营与安全合规。培训博士生及研究人员使用XCT设备及数据处理，协助进行复合材料表征实验。'
   },
   {
     period: '2019.09 - 2020.09',
-    role: '硕士研究生',
-    org: '谢菲尔德大学机械工程学院',
-    desc: '主修高级机械工程，一等学位毕业。'
+    role: '机械工程理学硕士 (MSc)',
+    org: '谢菲尔德大学 (University of Sheffield)',
+    desc: '获 Distinction 学位。研究课题：航天器管道组件动态阻尼方法研究。利用ANSYS进行动态仿真与模态分析，使用MATLAB/Python自动化数据处理。'
   },
   {
     period: '2018.09 - 2019.06',
-    role: '本科',
-    org: '西苏格兰大学机械工程学院',
-    desc: '主修机械工程，一等学士学位毕业。'
+    role: '机械工程工学学士 (BEng)',
+    org: '西苏格兰大学 (University of the West of Scotland)',
+    desc: '获一等荣誉学位 (First Class Honours)。研究课题：亚麻/碳纤维环氧层合板机械性能研究。进行DCB和三点弯曲等机械测试。'
   },
   {
     period: '2015.09 - 2019.06',
-    role: '本科',
+    role: '机械设计制造及其自动化 (本科)',
     org: '长春工程学院',
-    desc: '主修机械设计制造及其自动化。'
+    desc: '工程学基础教育。'
   }
 ]
 </script>

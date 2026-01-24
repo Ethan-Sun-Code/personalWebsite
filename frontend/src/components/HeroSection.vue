@@ -7,10 +7,11 @@ import { Mail, Github, FileText } from 'lucide-vue-next'
     <div class="container hero-content">
       <div class="hero-text">
         <h1>Hello, I'm <span class="highlight">孙国文</span></h1>
-        <h2 class="subtitle">PhD / Research Associate</h2>
+        <h2 class="subtitle">机械工程博士 / 研究员</h2>
         <p class="intro">
-          专注于复合材料多尺度表征与性能预测的研究。致力于通过技术解决现实世界的问题。
-          这里展示了我的学术经历、项目成果以及个人思考。
+          专注于先进复合材料的多尺度建模与实验表征。
+          擅长利用有限元分析 (ABAQUS)、X射线计算机断层扫描 (XCT) 和数字体积相关技术 (DVC) 解决复杂的工程问题。
+          具备丰富的生物力学应用迁移经验，致力于连接实验观测与数值模拟。
         </p>
         <div class="social-links">
           <a href="#" class="btn btn-primary">
