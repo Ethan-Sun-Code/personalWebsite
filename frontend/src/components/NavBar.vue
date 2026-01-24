@@ -10,6 +10,7 @@ import { RouterLink } from 'vue-router'
         <RouterLink to="/">首页</RouterLink>
         <a href="#about">关于</a>
         <a href="#experience">经历</a>
+        <a href="#publications">论文</a>
         <a href="#projects">项目</a>
         <!-- <RouterLink to="/blog">博客</RouterLink> -->
       </div>

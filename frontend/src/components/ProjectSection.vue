@@ -3,23 +3,23 @@ import { ExternalLink, Github } from 'lucide-vue-next'
 
 const projects = [
   {
-    title: 'Personal Academic Website',
-    desc: '基于 Django 和 Vue 3 的前后端分离个人网站，支持 Docker 容器化部署。包含博客管理、项目展示等功能。',
-    tags: ['Vue 3', 'Django', 'Docker', 'MySQL'],
+    title: 'TFP 复合材料多尺度表征与建模 (PhD)',
+    desc: '研究 TFP 复合材料的力学性能与损伤行为。利用 SEM 和 XCT 进行失效机制研究，开发多尺度有限元模型 (ABAQUS) 预测强度，并使用 Python/C++ 开发 DVC 算法进行验证。',
+    tags: ['ABAQUS', 'Python', 'XCT', 'DVC', 'Multiscale Modelling'],
     link: '#',
     github: '#'
   },
   {
-    title: 'AI Image Classifier',
-    desc: '使用 PyTorch 构建的图像分类模型，在 ImageNet 上达到了 85% 的 Top-1 准确率。提供 RESTful API 接口。',
-    tags: ['Python', 'PyTorch', 'FastAPI'],
+    title: '航天器管道组件动态阻尼研究 (MSc)',
+    desc: '通过 ANSYS 进行动态仿真与模态分析，探索增加航天器管道组件动态阻尼的方法。使用 MATLAB 和 Python 自动化数据处理流程。',
+    tags: ['ANSYS', 'MATLAB', 'Python', 'Dynamics'],
     link: '#',
     github: '#'
   },
   {
-    title: 'Smart Home Dashboard',
-    desc: '物联网设备可视化仪表盘，实时监控室内温度、湿度及设备状态。支持 MQTT 协议。',
-    tags: ['React', 'Node.js', 'MQTT'],
+    title: '亚麻/碳纤维混合复合材料力学性能研究 (BEng)',
+    desc: '评估湿热环境下亚麻/碳纤维环氧层合板的弯曲强度和层间断裂韧性。进行 DCB 和三点弯曲实验。',
+    tags: ['Mechanical Testing', 'Composites', 'Sustainability'],
     link: '#',
     github: '#'
   }

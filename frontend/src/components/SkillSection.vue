@@ -1,9 +1,9 @@
 <script setup>
 const skills = [
-  { category: '计算建模 & 仿真', items: ['ABAQUS (UMAT/VUMAT)', 'Finite Element Analysis', 'Process-Structure-Performance', 'Multiscale Modelling'] },
-  { category: '实验表征 & 测试', items: ['X-ray CT (XCT)', 'SEM', 'Digital Volume Correlation (DVC)', 'In-situ Mechanical Testing'] },
-  { category: '编程 & 开发', items: ['Python', 'PyQt', 'C++', 'MATLAB', 'Image-based Modelling'] },
-  { category: '通用能力', items: ['Project Coordination', 'Data Management', 'Technical Communication', 'Mentoring'] }
+  { category: '计算建模 & 仿真', items: ['ABAQUS (UMAT/VUMAT)', 'ANSYS', 'SOLIDWORKS', 'CATIA', 'Adams', 'Fusion 360', 'Process-Structure-Performance'] },
+  { category: '实验表征 & 测试', items: ['Zeiss Versa 620 XRM', 'Deben CT 5000TEC', 'SEM', 'Digital Volume Correlation (DVC)', 'Digital Image Correlation (DIC)', 'Avizo', 'Dragonfly ORS', 'ImageJ'] },
+  { category: '编程 & 开发', items: ['Python (PyTorch/CNN)', 'MATLAB', 'C/C++', 'FORTRAN', 'VB.NET', 'MySQL', 'Web Design (Vue/Django)'] },
+  { category: '通用能力', items: ['Project Coordination', 'Data Analysis', 'Scientific Graph Plotting', 'Technical Communication', 'Mentoring'] }
 ]
 </script>
 
